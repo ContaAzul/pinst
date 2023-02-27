@@ -4,11 +4,11 @@
   "description": "Enable or disable npm postinstall hook",
   "main": "index.js",
   "bin": {
-    "ca-pinst": "bin.js"
+    "ca-pinst": "bin/bin.js"
   },
   "files": [
-    "index.js",
-    "bin.js"
+    "bin/bin.js",
+    "src/index.js"
   ],
   "scripts": {
     "preinstall": "yarn dlx only-allow yarn",
