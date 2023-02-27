@@ -1,6 +1,7 @@
 #!/usr/bin/env node
-const pkg = require('./package.json')
-const { enableAndSave, disableAndSave } = require('./index')
+/* eslint-disable node/shebang */
+const pkg = require('../package.json')
+const { enableAndSave, disableAndSave } = require('../src/index')
 
 const usage = `Usage
   $ pinst
