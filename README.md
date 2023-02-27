@@ -1,8 +1,8 @@
-# @contaazul/pinst [![Node.js CI](https://github.com/typicode/pinst/workflows/Node.js%20CI/badge.svg)](https://github.com/typicode/pinst/actions) [![npm](https://img.shields.io/npm/v/pinst.svg)](https://www.npmjs.com/package/pinst)
+# contaazul-pinst [![Node.js CI](https://github.com/ContaAzul/pinst/workflows/Node.js%20CI/badge.svg)](https://github.com/ContaAzul/pinst/actions) [![npm](https://img.shields.io/npm/v/contaazul-pinst.svg)](https://www.npmjs.com/package/contaazul-pinst)
 
 > `pinst` lets you have `preinstall` and `postinstall` hooks that runs only in dev 🍺
 
-**Important** if your project is using npm or pnpm, you can achieve the desired effect by setting a `prepare` hook instead. `pinst` is mainly useful for Yarn 2+ since it doesn't support `prepare` hook. See https://yarnpkg.com/advanced/lifecycle-scripts
+**Important** if your project is using npm or pnpm, you can achieve the desired effect by setting a `prepare` hook instead. `ca-pinst` is mainly useful for Yarn 2+ since it doesn't support `prepare` hook. See https://yarnpkg.com/advanced/lifecycle-scripts
 
 ## Usage
 
@@ -12,8 +12,8 @@
   "scripts": {
     "preinstall": "<some dev only command>",
     "postinstall": "<some dev only command>",
-    "prepack": "pinst --disable",
-    "postpack": "pinst --enable"
+    "prepack": "ca-pinst --disable",
+    "postpack": "ca-pinst --enable"
   }
 }
 ```
@@ -24,7 +24,7 @@
 
 ## CLI
 
-`pinst` accepts the following flags:
+`ca-pinst` accepts the following flags:
 
 ```txt
 --enable, -e   Enable postinstall hook
@@ -34,10 +34,10 @@
 
 ## Tips
 
-By inverting commands, you can also use `pinst` to enable `preinstall` and `postinstall` for your users only and not yourself.
+By inverting commands, you can also use `ca-pinst` to enable `preinstall` and `postinstall` for your users only and not yourself.
 
-`pinst` also supports `install` alias.
+`ca-pinst` also supports `install` alias.
 
 ## License
 
-MIT - [Typicode :cactus:](https://github.com/typicode)
+MIT - [ContaAzul :cactus:](https://github.com/ContaAzul)

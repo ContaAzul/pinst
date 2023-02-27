@@ -1,11 +1,9 @@
 {
-  "name": "@contaazul/pinst",
+  "name": "contaazul-pinst",
   "version": "1.0.0",
   "description": "Enable or disable npm postinstall hook",
   "main": "lib/bin.js",
-  "bin": {
-    "ca-pinst": "lib/bin.js"
-  },
+  "bin": "lib/bin.js",
   "files": [
     "lib/bin.js",
     "lib/index.js"
@@ -15,13 +13,23 @@
     "postinstall": "husky install",
     "prepack": "node ./lib/bin.js --silent --disable",
     "postpack": "node ./lib/bin.js --silent --enable",
+    "precommit": "yarn lint-staged",
     "test": "jest --coverage",
     "lint": "eslint .",
-    "lint:fix": "yarn lint --fix"
+    "lint:fix": "yarn lint --fix",
+    "release": "release-it --config release-it.config.js"
+  },
+  "lint-staged": {
+    "*.js": [
+      "yarn lint:fix"
+    ],
+    "*.{json,md,yml}": [
+      "prettier --write"
+    ]
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/typicode/pinst.git"
+    "url": "git+https://github.com/ContaAzul/pinst.git"
   },
   "keywords": [
     "npm",
@@ -32,14 +40,18 @@
     "devpreinstall",
     "devpostinstall"
   ],
-  "author": "typicode <typicode@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/typicode/pinst/issues"
+    "url": "https://github.com/ContaAzul/pinst/issues"
   },
-  "homepage": "https://github.com/typicode/pinst#readme",
+  "homepage": "https://github.com/ContaAzul/pinst#readme",
   "devDependencies": {
-    "@ca-tools-front/release-it-config": "^7.0.3",
+    "@commitlint/cli": "^17.4.4",
+    "@commitlint/config-conventional": "^17.4.4",
+    "@commitlint/format": "^17.4.4",
+    "@release-it/conventional-changelog": "^4.3.0",
+    "conventional-changelog": "^3.1.25",
+    "conventional-changelog-conventionalcommits": "^4.6.3",
     "eslint": "^7.18.0",
     "eslint-config-prettier": "^8.0.0",
     "eslint-config-xo-space": "^0.26.0",
@@ -47,15 +59,16 @@
     "eslint-plugin-prettier": "^3.3.1",
     "husky": "^5.0.6",
     "jest": "^26.6.3",
+    "lint-staged": "^11.0.0",
     "prettier": "2.2.1",
-    "release-it": "^14.12.4",
+    "release-it": "^14.14.3",
     "tempy": "^1.0.0"
   },
   "engines": {
     "node": ">=14.0.0"
   },
   "publishConfig": {
-    "registry": "http://npm.prod.contaazul.local"
+    "registry": "https://registry.npmjs.org/"
   },
   "jest": {
     "testURL": "http://localhost/"
