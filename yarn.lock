@@ -2439,7 +2439,7 @@ __metadata:
     release-it: ^14.14.3
     tempy: ^1.0.0
   bin:
-    contaazul-pinst: lib/bin.js
+    ca-pinst: ./lib/bin.js
   languageName: unknown
   linkType: soft
 
