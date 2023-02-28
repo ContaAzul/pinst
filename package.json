@@ -3,7 +3,9 @@
   "version": "1.0.1",
   "description": "Enable or disable npm postinstall hook",
   "main": "lib/bin.js",
-  "bin": "lib/bin.js",
+  "bin": {
+    "ca-pinst": "./lib/bin.js"
+  },
   "files": [
     "lib/bin.js",
     "lib/index.js"

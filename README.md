@@ -1,4 +1,4 @@
-# contaazul-pinst [![Node.js CI](https://github.com/ContaAzul/pinst/workflows/Node.js%20CI/badge.svg)](https://github.com/ContaAzul/pinst/actions) [![npm](https://img.shields.io/npm/v/contaazul-pinst.svg)](https://www.npmjs.com/package/contaazul-pinst)
+# contaazul-pinst [![Checks](https://github.com/ContaAzul/pinst/actions/workflows/ci.yml/badge.svg)](https://github.com/ContaAzul/pinst/actions) [![npm](https://img.shields.io/npm/v/contaazul-pinst.svg)](https://www.npmjs.com/package/contaazul-pinst)
 
 > `pinst` lets you have `preinstall` and `postinstall` hooks that runs only in dev 🍺
 
