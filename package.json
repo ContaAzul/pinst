@@ -1,6 +1,6 @@
 {
   "name": "contaazul-pinst",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Enable or disable npm postinstall hook",
   "main": "lib/bin.js",
   "bin": "lib/bin.js",
