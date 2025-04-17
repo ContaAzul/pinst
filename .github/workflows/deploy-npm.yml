@@ -66,4 +66,4 @@ jobs:
 
       # Release and publish version
       - name: Release version
-        run: NPM_TOKEN="${{ secrets.NPM_TOKEN }}" yarn release --ci --npm.skipChecks
+        run: GITHUB_TOKEN="${{ secrets.GH_TOKEN }}" GH_TOKEN="${{ secrets.GH_TOKEN }}" NPM_TOKEN="${{ secrets.NPM_TOKEN }}" yarn release --ci --npm.skipChecks
