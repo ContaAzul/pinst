@@ -34,9 +34,9 @@ jobs:
           git remote set-url origin https://$GITHUB_ACTOR:$GH_TOKEN@github.com/ContaAzul/creditcard.js
       # Setup Node.js build environment
       - name: Setup Node
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v4
         with:
-          node-version: '18.x'
+          node-version: '24.x'
           registry-url: 'https://registry.npmjs.org'
 
       # Cache dependencies
