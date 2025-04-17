@@ -32,7 +32,7 @@ function getConfig() {
      * https://github.com/conventional-changelog/conventional-changelog/tree/master/packages/conventional-changelog-writer
      */
     presetConfig.writerOpts.footerPartial = loadTemplate(
-      './templates/footer.hbs'
+      './templates/footer.hbs',
     )
     presetConfig.writerOpts.headerPartial = ''
     return presetConfig
